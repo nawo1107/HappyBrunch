@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct CategoriesButtonView: View {
+    @Binding var filterByCategory: String
+    
     let categories: [String]
     
     var body: some View {
         HStack {
             ForEach(categories, id: \.self) {category in
-                Button(action: {}, label: {
                     Text(category)
-                        .fontWeight(category == categories.first ? .bold: .regular)
+                        .fontWeight(category == filterByCategory ? .bold: .regular)
                         .padding(.horizontal, 6)
-                        .foregroundColor(category == categories.first ? Color(.label) : .secondary)
-                })
+                        .foregroundColor(category == filterByCategory ? Color(.label) : .secondary)
+                        .onTapGesture {
+                            filter(by: category)
+                        }
             
             }
         }
+    }
+    
+    func filter(by label: String) {
+        filterByCategory = label
     }
 }
