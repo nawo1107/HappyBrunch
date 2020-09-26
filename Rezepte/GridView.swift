@@ -20,7 +20,7 @@ struct GridView: View {
                 ForEach(recipes.filter{
                     $0.title.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory || $0.subtitle.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory }, id: \.title) { recipe in
                 NavigationLink(
-                    destination:  Text("Destination"),
+                    destination: Text("Destination"),
                     label: {
                         GridCellView(recipe: recipe)
                     })
@@ -28,7 +28,7 @@ struct GridView: View {
             } else {
                 ForEach(recipes.filter { $0.category.contains(filterByCategory)}, id: \.title) { recipe in
                     NavigationLink(
-                        destination:  Text("Destination"),
+                        destination: Text("Destination"),
                         label: {
                             GridCellView(recipe: recipe)
                         })

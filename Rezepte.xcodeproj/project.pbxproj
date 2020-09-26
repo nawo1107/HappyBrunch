@@ -17,7 +17,6 @@
 		2B3E7498251F700800129944 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E7497251F700800129944 /* GridCellView.swift */; };
 		2B3E749B251F745400129944 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749A251F745400129944 /* GridView.swift */; };
 		2B3E749E251F76AF00129944 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749D251F76AF00129944 /* CategoriesView.swift */; };
-		2B3E74A1251F78F200129944 /* NavigationBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */; };
 		2B3E74A7251F875900129944 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A6251F875900129944 /* Data.swift */; };
 		548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548EC3BC251FA4CD004014B2 /* Inspiration.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		2B3E7497251F700800129944 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
 		2B3E749A251F745400129944 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		2B3E749D251F76AF00129944 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
-		2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemView.swift; sourceTree = "<group>"; };
 		2B3E74A6251F875900129944 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		548EC3BC251FA4CD004014B2 /* Inspiration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspiration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +75,6 @@
 				2B3E7480251F694500129944 /* ContentView.swift */,
 				2B3E748E251F699900129944 /* SearchTextFieldView.swift */,
 				2B3E749D251F76AF00129944 /* CategoriesView.swift */,
-				2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */,
 				2B3E7491251F6CC600129944 /* HeaderView.swift */,
 				2B3E7494251F6E5400129944 /* CategoriesButtonView.swift */,
 				2B3E7497251F700800129944 /* GridCellView.swift */,
@@ -180,7 +177,6 @@
 				2B3E74A7251F875900129944 /* Data.swift in Sources */,
 				548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */,
 				2B3E749B251F745400129944 /* GridView.swift in Sources */,
-				2B3E74A1251F78F200129944 /* NavigationBarItemView.swift in Sources */,
 				2B3E747F251F694500129944 /* RezepteApp.swift in Sources */,
 				2B3E748F251F699900129944 /* SearchTextFieldView.swift in Sources */,
 				2B3E7492251F6CC600129944 /* HeaderView.swift in Sources */,
