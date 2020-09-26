@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct GridCellView: View {
-    let recipe: Recipe
+    let recipes: Recipe
     
     var body: some View {
         VStack {
             HStack {
-               Text(recipe.title)
+               Text(recipes.title)
                 .font(.body)
                 .bold()
                 
@@ -25,13 +25,13 @@ struct GridCellView: View {
             }
             .padding([.top, .horizontal])
             
-            Image(recipe.image)
+            Image(recipes.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
             
             
-            Label(recipe.time, systemImage: "clock")
+            Label(recipes.time, systemImage: "clock")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
             

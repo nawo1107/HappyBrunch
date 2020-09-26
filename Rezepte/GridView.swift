@@ -22,7 +22,7 @@ struct GridView: View {
                 NavigationLink(
                     destination: Text("Destination"),
                     label: {
-                        GridCellView(recipe: recipe)
+                        GridCellView(recipes: recipe)
                     })
             }
             } else {
@@ -30,7 +30,7 @@ struct GridView: View {
                     NavigationLink(
                         destination: Text("Destination"),
                         label: {
-                            GridCellView(recipe: recipe)
+                            GridCellView(recipes: recipe)
                         })
                 }
             }
