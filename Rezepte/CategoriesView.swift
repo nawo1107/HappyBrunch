@@ -11,7 +11,7 @@ struct CategoriesView: View {
     @State private var filterBySearch = ""
     @State private var filterByCategory = "Vegan"
 
-    let categories = ["Vegan", "Veggi", "Fleisch", "Fisch", "Dessert"]
+    let categories = ["Vegan", "Veggie", "Fleisch", "Fisch", "Dessert"]
     
     let layout = [ GridItem(.adaptive(minimum: 180))]
     
