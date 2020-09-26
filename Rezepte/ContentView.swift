@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
-/*
+
 struct ContentView: View {
     var body: some View {
         TabView {
-            CategoriesView()
+            Home()
                 .tabItem {
                     Image(systemName: "text.book.closed")
                     Text("Inspiration")
                 }.tag(0)
             
-            Text("Kategorien")
+            CategoriesView()
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                     Text("Kategorien")
@@ -42,4 +42,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}*/
+}

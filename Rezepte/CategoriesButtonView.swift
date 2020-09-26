@@ -16,13 +16,14 @@ struct CategoriesButtonView: View {
         HStack {
             ForEach(categories, id: \.self) {category in
                     Text(category)
+                        .font(.caption)
                         .fontWeight(category == filterByCategory ? .bold: .regular)
-                        .padding(.horizontal, 6)
+                        .padding([.horizontal, .bottom])
                         .foregroundColor(category == filterByCategory ? Color(.label) : .secondary)
+                        .fixedSize()
                         .onTapGesture {
                             filter(by: category)
                         }
-            
             }
         }
     }

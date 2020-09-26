@@ -192,7 +192,7 @@ struct Inspiration: Identifiable {
 
 struct Inspiration_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        ContentView()
     }
 }
 
