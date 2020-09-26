@@ -68,6 +68,7 @@
 		2B3E747D251F694500129944 /* Rezepte */ = {
 			isa = PBXGroup;
 			children = (
+				548EC3C2251FD3DB004014B2 /* New Group */,
 				548EC3BC251FA4CD004014B2 /* Inspiration.swift */,
 				2B3E747E251F694500129944 /* RezepteApp.swift */,
 				2B3E74A6251F875900129944 /* Data.swift */,
@@ -91,6 +92,13 @@
 				2B3E7485251F694600129944 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		548EC3C2251FD3DB004014B2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
