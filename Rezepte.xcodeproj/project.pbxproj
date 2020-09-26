@@ -11,6 +11,15 @@
 		2B3E7481251F694500129944 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E7480251F694500129944 /* ContentView.swift */; };
 		2B3E7483251F694600129944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3E7482251F694600129944 /* Assets.xcassets */; };
 		2B3E7486251F694600129944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3E7485251F694600129944 /* Preview Assets.xcassets */; };
+		2B3E748F251F699900129944 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E748E251F699900129944 /* SearchTextFieldView.swift */; };
+		2B3E7492251F6CC600129944 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E7491251F6CC600129944 /* HeaderView.swift */; };
+		2B3E7495251F6E5400129944 /* CategoriesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E7494251F6E5400129944 /* CategoriesButtonView.swift */; };
+		2B3E7498251F700800129944 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E7497251F700800129944 /* GridCellView.swift */; };
+		2B3E749B251F745400129944 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749A251F745400129944 /* GridView.swift */; };
+		2B3E749E251F76AF00129944 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749D251F76AF00129944 /* CategoriesView.swift */; };
+		2B3E74A1251F78F200129944 /* NavigationBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */; };
+		2B3E74A4251F7F0E00129944 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A3251F7F0E00129944 /* AccountView.swift */; };
+		2B3E74A7251F875900129944 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A6251F875900129944 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		2B3E7482251F694600129944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3E7485251F694600129944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B3E7487251F694600129944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3E748E251F699900129944 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
+		2B3E7491251F6CC600129944 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2B3E7494251F6E5400129944 /* CategoriesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonView.swift; sourceTree = "<group>"; };
+		2B3E7497251F700800129944 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		2B3E749A251F745400129944 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		2B3E749D251F76AF00129944 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemView.swift; sourceTree = "<group>"; };
+		2B3E74A3251F7F0E00129944 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2B3E74A6251F875900129944 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +71,16 @@
 			isa = PBXGroup;
 			children = (
 				2B3E747E251F694500129944 /* RezepteApp.swift */,
+				2B3E74A3251F7F0E00129944 /* AccountView.swift */,
+				2B3E74A6251F875900129944 /* Data.swift */,
 				2B3E7480251F694500129944 /* ContentView.swift */,
+				2B3E748E251F699900129944 /* SearchTextFieldView.swift */,
+				2B3E749D251F76AF00129944 /* CategoriesView.swift */,
+				2B3E74A0251F78F200129944 /* NavigationBarItemView.swift */,
+				2B3E7491251F6CC600129944 /* HeaderView.swift */,
+				2B3E7494251F6E5400129944 /* CategoriesButtonView.swift */,
+				2B3E7497251F700800129944 /* GridCellView.swift */,
+				2B3E749A251F745400129944 /* GridView.swift */,
 				2B3E7482251F694600129944 /* Assets.xcassets */,
 				2B3E7487251F694600129944 /* Info.plist */,
 				2B3E7484251F694600129944 /* Preview Content */,
@@ -138,8 +165,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3E749E251F76AF00129944 /* CategoriesView.swift in Sources */,
+				2B3E7498251F700800129944 /* GridCellView.swift in Sources */,
 				2B3E7481251F694500129944 /* ContentView.swift in Sources */,
+				2B3E7495251F6E5400129944 /* CategoriesButtonView.swift in Sources */,
+				2B3E74A7251F875900129944 /* Data.swift in Sources */,
+				2B3E74A4251F7F0E00129944 /* AccountView.swift in Sources */,
+				2B3E749B251F745400129944 /* GridView.swift in Sources */,
+				2B3E74A1251F78F200129944 /* NavigationBarItemView.swift in Sources */,
 				2B3E747F251F694500129944 /* RezepteApp.swift in Sources */,
+				2B3E748F251F699900129944 /* SearchTextFieldView.swift in Sources */,
+				2B3E7492251F6CC600129944 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
