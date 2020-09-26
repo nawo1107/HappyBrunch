@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-/*
+
 struct ContentView: View {
     var body: some View {
         TabView {
@@ -20,19 +20,19 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                     Text("Kategorien")
-                }.tag(2)
+                }.tag(1)
             
             Text("Favoriten")
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Favoriten")
-                }.tag(3)
+                }.tag(2)
             
             Text("Scan")
                 .tabItem {
                     Image(systemName: "photo")
                     Text("Scan")
-                }.tag(4)
+                }.tag(3)
             
         }
     }
@@ -42,4 +42,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}*/
+}

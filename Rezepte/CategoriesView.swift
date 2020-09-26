@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CategoriesView: View {
     @State private var filterBySearch = ""
-    @State private var filterByCategory = "Vegan"
+    @State private var filterByCategory = "Deutsch"
 
-    let categories = ["Vegan", "Veggie", "Fleisch", "Fisch", "Dessert"]
+    let categories = ["Deutsch", "Amerikanisch", "Französisch"]
     
     let layout = [ GridItem(.adaptive(minimum: 180))]
     

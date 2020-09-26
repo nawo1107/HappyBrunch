@@ -5,7 +5,7 @@
 //  Created by Natalie Wolf on 26.09.20.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct AccountView: View {
     @Binding var isAccountViewShowing: Bool
@@ -27,23 +27,7 @@ struct AccountView: View {
                 }
                 .padding()
                 .background(Color(.secondarySystemGroupedBackground))
-                
-                List {
-                    Section {
-                        HStack {
-                            Image(systemName: "person")
-                                .font(.system(size: 55))
-                                .padding()
-                            
-                            VStack(alignment: .leading) {
-                                Text("Name")
-                                    .font(.headline)
-                                
-                                Text("email@gmail.com")
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                    }
+
                     Section {
                         ForEach(0 ..< 5) {item in}
                         NavigationLink(
@@ -56,9 +40,7 @@ struct AccountView: View {
                 .listStyle(GroupedListStyle())
             }
             .navigationBarHidden(true)
-        }
     }
-}
     
 
 struct AccountView_Previews: PreviewProvider {
@@ -66,3 +48,4 @@ struct AccountView_Previews: PreviewProvider {
             AccountView(isAccountViewShowing: Binding.constant(true))
         }
 }
+}*/
