@@ -34,7 +34,7 @@ struct Home: View{
             title: "Käsekuchen mit Blaubeeren",
             subtitle: "Kuchen",
             details: "BlaBla",
-            color: Color(#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)),
+            color: Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)),
             expand: false
         ),
         Inspiration(
@@ -79,12 +79,6 @@ struct Home: View{
                                 Text("Hey  Natalie, wir haben ein paar neue Empfehlungen für dich")
                                     .font(.system(size: 25, weight: .light, design: .serif))
                                 Spacer()
-                                Button(action: {
-                                    //Do something
-                                }) {
-                                    Image(systemName: "magnifyingglass")
-                                        .font(.system(size: 20, weight: .light, design: .serif)).foregroundColor(Color("mattblue"))
-                                }
                             }.padding(.top, 20)
                             VStack{
                                 Text("Neue Rezepte").font(.system(size: 35, weight: .medium, design: .serif)).padding(.trailing, 110)

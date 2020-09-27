@@ -27,7 +27,7 @@ struct SearchTextFieldView: View {
             Button(action: { text = ""}, label: {
                 Circle()
                     .frame(width: 45, height: 45)
-                    .foregroundColor(text.isEmpty ? Color(.lightGray) : Color(.darkGray))
+                    .foregroundColor(text.isEmpty ? Color(.lightGray) : Color("mattblue"))
                     .overlay(SearchBarButtonOverlayView(text : $text))
                     .padding(.trailing)
                     .offset(x: -5)
