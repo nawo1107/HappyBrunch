@@ -18,17 +18,17 @@ struct GridView: View {
         LazyVGrid(columns: layout, spacing: 32) {
             if !filterBySearch.isEmpty {
                 ForEach(recipes.filter{
-                    $0.title.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory || $0.subtitle.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory }, id: \.title) { recipe in
+                            $0.title.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory || $0.subtitle.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory }, id: \.title) { recipe in
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination: DetailView(recipe: recipe),
                     label: {
                         GridCellView(recipes: recipe)
                     })
             }
             } else {
                 ForEach(recipes.filter { $0.category.contains(filterByCategory)}, id: \.title) { recipe in
-                    NavigationLink(
-                        destination: Text("Destination"),
+               NavigationLink(
+                    destination: DetailView(recipe: recipe),
                         label: {
                             GridCellView(recipes: recipe)
                         })

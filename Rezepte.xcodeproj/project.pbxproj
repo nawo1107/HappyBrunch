@@ -18,6 +18,7 @@
 		2B3E749B251F745400129944 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749A251F745400129944 /* GridView.swift */; };
 		2B3E749E251F76AF00129944 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E749D251F76AF00129944 /* CategoriesView.swift */; };
 		2B3E74A7251F875900129944 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A6251F875900129944 /* Data.swift */; };
+		2B850BAF25205A62006D3EDF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B850BAE25205A62006D3EDF /* DetailView.swift */; };
 		548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548EC3BC251FA4CD004014B2 /* Inspiration.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		2B3E749A251F745400129944 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		2B3E749D251F76AF00129944 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		2B3E74A6251F875900129944 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2B850BAE25205A62006D3EDF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		548EC3BC251FA4CD004014B2 /* Inspiration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspiration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +70,6 @@
 		2B3E747D251F694500129944 /* Rezepte */ = {
 			isa = PBXGroup;
 			children = (
-				548EC3C2251FD3DB004014B2 /* New Group */,
 				548EC3BC251FA4CD004014B2 /* Inspiration.swift */,
 				2B3E747E251F694500129944 /* RezepteApp.swift */,
 				2B3E74A6251F875900129944 /* Data.swift */,
@@ -79,6 +80,7 @@
 				2B3E7494251F6E5400129944 /* CategoriesButtonView.swift */,
 				2B3E7497251F700800129944 /* GridCellView.swift */,
 				2B3E749A251F745400129944 /* GridView.swift */,
+				2B850BAE25205A62006D3EDF /* DetailView.swift */,
 				2B3E7482251F694600129944 /* Assets.xcassets */,
 				2B3E7487251F694600129944 /* Info.plist */,
 				2B3E7484251F694600129944 /* Preview Content */,
@@ -92,13 +94,6 @@
 				2B3E7485251F694600129944 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		548EC3C2251FD3DB004014B2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +170,7 @@
 				2B3E7481251F694500129944 /* ContentView.swift in Sources */,
 				2B3E7495251F6E5400129944 /* CategoriesButtonView.swift in Sources */,
 				2B3E74A7251F875900129944 /* Data.swift in Sources */,
+				2B850BAF25205A62006D3EDF /* DetailView.swift in Sources */,
 				548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */,
 				2B3E749B251F745400129944 /* GridView.swift in Sources */,
 				2B3E747F251F694500129944 /* RezepteApp.swift in Sources */,
