@@ -12,6 +12,8 @@ struct CategoriesView: View {
     @State private var filterByCategory = "Deutsch"
 
     let categories = ["Deutsch", "Amerikanisch", "Französisch"]
+    let favorites: Favorites
+
     
     let layout = [ GridItem(.adaptive(minimum: 180))]
     
@@ -22,7 +24,7 @@ struct CategoriesView: View {
                     SearchTextFieldView(text: $filterBySearch)
                     HeaderView(label: "Categories")
                     CategoriesButtonView(filterByCategory: $filterByCategory, categories: categories)
-                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, recipes: recipes)
+                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, favorite: favorites)
                 }
             }
             
@@ -32,8 +34,3 @@ struct CategoriesView: View {
     }
 }
 
-struct CategoriesView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoriesView()
-    }
-}

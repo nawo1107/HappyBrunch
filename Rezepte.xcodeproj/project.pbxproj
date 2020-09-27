@@ -20,6 +20,7 @@
 		2B3E74A7251F875900129944 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3E74A6251F875900129944 /* Data.swift */; };
 		2B850BAF25205A62006D3EDF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B850BAE25205A62006D3EDF /* DetailView.swift */; };
 		548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548EC3BC251FA4CD004014B2 /* Inspiration.swift */; };
+		54E4E8CC25208584004986FC /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4E8CB25208584004986FC /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2B3E74A6251F875900129944 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2B850BAE25205A62006D3EDF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		548EC3BC251FA4CD004014B2 /* Inspiration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspiration.swift; sourceTree = "<group>"; };
+		54E4E8CB25208584004986FC /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				2B3E7482251F694600129944 /* Assets.xcassets */,
 				2B3E7487251F694600129944 /* Info.plist */,
 				2B3E7484251F694600129944 /* Preview Content */,
+				54E4E8CB25208584004986FC /* Favorites.swift */,
 			);
 			path = Rezepte;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				548EC3BD251FA4CD004014B2 /* Inspiration.swift in Sources */,
 				2B3E749B251F745400129944 /* GridView.swift in Sources */,
 				2B3E747F251F694500129944 /* RezepteApp.swift in Sources */,
+				54E4E8CC25208584004986FC /* Favorites.swift in Sources */,
 				2B3E748F251F699900129944 /* SearchTextFieldView.swift in Sources */,
 				2B3E7492251F6CC600129944 /* HeaderView.swift in Sources */,
 			);
