@@ -21,8 +21,8 @@ struct CategoriesView: View {
         ZStack {
             NavigationView {
                 ScrollView {
+                    HeaderView()
                     SearchTextFieldView(text: $filterBySearch)
-                    HeaderView(label: "Categories")
                     CategoriesButtonView(filterByCategory: $filterByCategory, categories: categories)
                     GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, favorite: favorites)
                 }
@@ -33,4 +33,3 @@ struct CategoriesView: View {
         
     }
 }
-

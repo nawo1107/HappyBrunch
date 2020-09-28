@@ -13,19 +13,25 @@ struct DetailView: View {
     var recipe: Recipe
 
     var body: some View {
-
-        VStack {
-            Text(recipe.title).font(.title)
-            Spacer()
+        ZStack(alignment: .topTrailing) {
+            VStack{
                 Image(recipe.image)
-                .frame(width: 80, height: 80)
-                    .padding()
-                Spacer()
-                Text(recipe.description)
-        }
-            
-            Spacer()
+                    .resizable()
+                    .frame(width: 450 , height: 350)
+                    .cornerRadius( 0 , antialiased: (25 != 0))
+                HStack{
+                        Text(recipe.title).font(.system(size: 25, weight: .bold, design: .serif))
+                    }.padding()
+                    Text(recipe.subtitle).font(.system(size: 16, weight: .light, design: .monospaced))
+                    Spacer()
+                    Text(recipe.description)
+                        .font(.system(size: 15, weight: .light, design: .serif))
+                        .padding(.all, 18)
+                }
+            }
+            .contentShape(Rectangle())
     }
-        
 }
+
+
 
