@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let favorites: Favorites
     var body: some View {
         TabView {
             Home()
@@ -16,7 +17,7 @@ struct ContentView: View {
                     Text("Inspiration")
                 }.tag(0)
             
-            CategoriesView()
+            CategoriesView(favorites: favorites)
                 .tabItem {
                     Image(systemName: "list.bullet.rectangle")
                     Text("Kategorien")
@@ -38,8 +39,3 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

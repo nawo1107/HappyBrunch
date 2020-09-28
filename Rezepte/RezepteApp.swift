@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct RezepteApp: App {
+    let favorites = Favorites()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(favorites: favorites)
         }
     }
 }

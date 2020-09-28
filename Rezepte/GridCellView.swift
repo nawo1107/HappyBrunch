@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GridCellView: View {
+    
+    @ObservedObject var favorites: Favorites
     let recipes: Recipe
     
     var body: some View {
@@ -19,8 +21,33 @@ struct GridCellView: View {
                 
                 Spacer()
                 
-                Button(action: {}, label: {
-                    Image(systemName: "heart")
+                /*ForEach(self.recipes, id: \.id) { recipes in
+                  VStack {
+                    Text(recipes.title)
+                    Button(action: {
+                      if self.favorites.contains(recipes) {
+                          self.favorites.remove(recipes)
+                      } else {
+                          self.favorites.add(recipes)
+                      }
+                    }) {
+                      HStack {
+                          Image(systemName: favorites.contains(recipes) ? "heart.fill" : "heart").foregroundColor(favorites.contains(recipes) ? .red : .white)
+                      }
+                    }
+                  }
+                }*/
+                
+                Button(action: {
+                    if self.favorites.isFavorite(id: recipes.id){
+                        self.favorites.removeFavorite(id: recipes.id)
+                    } else {
+                        self.favorites.addFavorite(id: recipes.id)
+                    }
+                    
+                }, label: {
+                    let isFavorite = favorites.isFavorite(id: recipes.id)
+                    Image(systemName: isFavorite ? "heart.fill" : "heart").foregroundColor(isFavorite ? .red : .white)
                 })
             }
             .padding([.top, .horizontal])
