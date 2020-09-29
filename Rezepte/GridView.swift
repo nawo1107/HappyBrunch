@@ -12,28 +12,29 @@ struct GridView: View {
     @Binding var filterBySearch: String
     
     let layout: [GridItem]
-    let favorite: Favorites
+    let recipesData: RecipesData
     
     var body: some View {
         LazyVGrid(columns: layout, spacing: 32) {
             if !filterBySearch.isEmpty {
-                ForEach(favorite.recipes.filter{
+                ForEach(recipesData.recipes.filter{
                             $0.title.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory || $0.subtitle.lowercased().contains(filterBySearch.lowercased()) && $0.category == filterByCategory }, id: \.title) { recipe in
-                NavigationLink(
-                    destination: DetailView(recipe: recipe),
-                    label: {
-                        GridCellView(favorites: favorite, recipes: recipe)
-                    })
-            }
-            } else {
-                ForEach(favorite.recipes.filter { $0.category.contains(filterByCategory)}, id: \.title) { recipe in
-
-               NavigationLink(
-                    destination: DetailView(recipe: recipe),
+                    NavigationLink(
+                        destination: DetailView(recipe: recipe),
                         label: {
-                            GridCellView(favorites: favorite, recipes: recipe)
+                            GridCellView(recipesData: recipesData, recipes: recipe)
                         })
                 }
+            } else {
+                let recipes = recipesData.recipes.filter { $0.category.contains(filterByCategory)}
+                ForEach(recipes) { recipe in
+                    NavigationLink(
+                        destination: DetailView(recipe: recipe),
+                        label: {
+                            GridCellView(recipesData: recipesData, recipes: recipe)
+                        }) 
+                }
+               
             }
         }
     }
