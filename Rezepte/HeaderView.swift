@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let label: String
     
     var body: some View {
-        Text(label)
-            .font(.largeTitle)
-            .fontWeight(.heavy)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding([.leading, .bottom])
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Kategorien")
+                .font(.system(size: 45, weight: .medium, design: .serif))
+                .padding(.leading)
+
+            HStack{
+                Text("Hier kann du nach einem bestimmten Rezept suchen oder in den einzelnen Kategorien stöbern. Viel Spaß beim Nachkochen!")
+                    .font(.system(size: 16, weight: .light, design: .monospaced))
+                    .padding(.leading)
+                Spacer()
+            }.padding(.top, 20)
+        }.padding()
+        Spacer()
     }
 }
 
-struct HeaderView_Previes: PreviewProvider {
+
+
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(label: "Categories")
+        HeaderView()
     }
 }

@@ -12,28 +12,23 @@ struct SearchTextFieldView: View {
     
     var body: some View {
         ZStack(alignment: .trailing) {
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 16)
                 .frame(height: 55)
                 .foregroundColor(Color(
                     .secondarySystemBackground))
                 .padding()
-            
-            
             TextField("Finde Rezepte", text: $text)
                 .padding(.leading)
                 .offset(x: 12)
-            
-            
             Button(action: { text = ""}, label: {
                 Circle()
-                    .frame(width: 45, height: 45)
-                    .foregroundColor(text.isEmpty ? Color(.lightGray) : Color("mattblue"))
+                    .frame(width: 42, height: 42)
+                    .foregroundColor(text.isEmpty ? Color("mattblue") : Color(.lightGray))
                     .overlay(SearchBarButtonOverlayView(text : $text))
                     .padding(.trailing)
                     .offset(x: -5)
             })
         }
-        .padding()
     }
 }
 
