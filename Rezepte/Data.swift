@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct Recipe: Hashable, Encodable {
+struct Recipe: Hashable, Encodable, Identifiable {
     var id : String
     let title: String
     let subtitle: String

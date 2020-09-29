@@ -12,7 +12,7 @@ struct CategoriesView: View {
     @State private var filterByCategory = "Deutsch"
 
     let categories = ["Deutsch", "Amerikanisch", "Französisch"]
-    let favorites: Favorites
+    let recipesData: RecipesData
 
     
     let layout = [ GridItem(.adaptive(minimum: 180))]
@@ -24,7 +24,7 @@ struct CategoriesView: View {
                     HeaderView()
                     SearchTextFieldView(text: $filterBySearch)
                     CategoriesButtonView(filterByCategory: $filterByCategory, categories: categories)
-                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, favorite: favorites)
+                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, recipesData: recipesData)
                 }
             }
             

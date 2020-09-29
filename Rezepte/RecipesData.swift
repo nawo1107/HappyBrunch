@@ -1,5 +1,5 @@
 //
-//  Favorites.swift
+//  RecipesData.swift
 //  Rezepte
 //
 //  Created by Josina Zotzmann on 27.09.20.
@@ -9,7 +9,7 @@ import SwiftUI
 
 import Foundation
 
-class Favorites: ObservableObject {
+class RecipesData: ObservableObject {
     
     var recipes: [Recipe] = []
     
