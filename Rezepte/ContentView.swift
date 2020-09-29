@@ -13,13 +13,13 @@ struct ContentView: View {
         TabView {
             Home()
                 .tabItem {
-                    Image(systemName: "text.book.closed")
+                    Image(systemName: "list.bullet.rectangle")
                     Text("Inspiration")
                 }.tag(0)
             
             CategoriesView(recipesData: recipesData)
                 .tabItem {
-                    Image(systemName: "list.bullet.rectangle")
+                    Image(systemName: "magnifyingglass")
                     Text("Kategorien")
                 }.tag(1)
             FavoritesView(recipesData: recipesData)
@@ -28,10 +28,10 @@ struct ContentView: View {
                     Text("Favoriten")
                 }.tag(2)
             
-            Text("Scan")
+            ShoppingList()
                 .tabItem {
-                    Image(systemName: "photo")
-                    Text("Scan")
+                    Image(systemName: "bag")
+                    Text("Einkaufsliste")
                 }.tag(3)
             
         }
