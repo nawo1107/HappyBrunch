@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CategoriesView: View {
     @State private var filterBySearch = ""
-    @State private var filterByCategory = "Deutsch"
+    @State private var filterByCategory = "Amerikanisch"
 
-    let categories = ["Deutsch", "Amerikanisch", "Französisch"]
+    let categories = ["Amerikanisch", "Deutsch", "Französisch"]
     let recipesData: RecipesData
 
     

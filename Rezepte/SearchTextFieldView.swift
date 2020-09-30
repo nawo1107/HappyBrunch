@@ -15,8 +15,8 @@ struct SearchTextFieldView: View {
             RoundedRectangle(cornerRadius: 16)
                 .frame(height: 55)
                 .foregroundColor(Color(
-                    .secondarySystemBackground))
-                .padding()
+                .secondarySystemBackground))
+                .padding(.all)
             TextField("Finde Rezepte", text: $text)
                 .padding(.leading)
                 .offset(x: 12)
@@ -29,6 +29,7 @@ struct SearchTextFieldView: View {
                     .offset(x: -5)
             })
         }
+        .padding(.all)
     }
 }
 

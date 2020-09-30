@@ -15,48 +15,51 @@ struct GridCellView: View {
     var body: some View {
         VStack {
             HStack {
-               Text(recipes.title)
-                .font(.body)
-                .bold()
-                
-                Spacer()
-                
-                Button(action: {
-                    if self.recipesData.isFavorite(id: recipes.id){
-                        self.recipesData.removeFavorite(id: recipes.id)
-                    } else {
-                        self.recipesData.addFavorite(id: recipes.id)
-                    }
+                VStack{
+                    Button(action: {
+                        if self.recipesData.isFavorite(id: recipes.id){
+                            self.recipesData.removeFavorite(id: recipes.id)
+                        } else {
+                            self.recipesData.addFavorite(id: recipes.id)
+                        }
+                        
+                        
+                    }, label: {
+                        let isFavorite = recipesData.isFavorite(id: recipes.id)
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            .frame(alignment: .leading)
+                            .foregroundColor(isFavorite ? .red : Color("darkgrey"))
+                            .padding(.bottom, 25)
+                            .padding(.top, 25)
+
+                    })
+
+
                     
-                }, label: {
-                    let isFavorite = recipesData.isFavorite(id: recipes.id)
-                    Image(systemName: isFavorite ? "heart.fill" : "heart").foregroundColor(isFavorite ? .red : .white)
-                })
+
+                    Image(recipes.image)
+                        .resizable()
+                        .frame(width: 300, height: 200)
+                        .aspectRatio(contentMode: .fit)
+                    Text(recipes.title)
+                        .font(.system(size: 20, weight: .medium, design: .serif))
+                        .padding(.top, 10)
+                        .padding(.bottom, 5)
+                    Label(recipes.time, systemImage: "clock")
+                        .font(.system(size: 16, weight: .medium, design: .monospaced))
+                        .padding(.bottom, 18)
+
+                        
+                    
+                    Spacer()
+                } .padding([.leading, .trailing], 25)
+                
             }
-            .padding([.top, .horizontal])
-            
-            Image(recipes.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
-            
-            
-            Label(recipes.time, systemImage: "clock")
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading)
-            
-            
+            .background(Color(.secondarySystemBackground))
+            .foregroundColor(Color("darkgrey"))
+            .cornerRadius(16)
+            .padding([.leading, .trailing], 22)
         }
-        .frame(width: 180, height: 180)
-        .background(Color(.secondarySystemBackground))
-        .foregroundColor(Color(.label))
-        .cornerRadius(18)
-        
     }
 }
 
-struct GridCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
