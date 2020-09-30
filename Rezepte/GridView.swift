@@ -11,7 +11,6 @@ struct GridView: View {
     @Binding var filterByCategory: String
     @Binding var filterBySearch: String
     
-    let layout: [GridItem]
     let recipesData: RecipesData
     
     var body: some View {

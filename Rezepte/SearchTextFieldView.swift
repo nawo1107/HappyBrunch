@@ -28,8 +28,7 @@ struct SearchTextFieldView: View {
                     .padding(.trailing)
                     .offset(x: -5)
             })
-        }
-        .padding(.all)
+        }.padding(.all)
     }
 }
 
@@ -42,7 +41,7 @@ struct SearchTextFieldView_Previews: PreviewProvider {
             SearchTextFieldView(text: Binding.constant(""))
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
-        }
+        }.padding(.all)
     }
 }
 

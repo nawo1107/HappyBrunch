@@ -10,19 +10,18 @@ import SwiftUI
 struct HeaderView: View {
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack() {
             Text("Kategorien")
                 .font(.system(size: 45, weight: .medium, design: .serif))
-                .padding(.leading)
-
+                .padding()
             HStack{
-                Text("Hier kann du nach einem bestimmten Rezept suchen oder in den einzelnen Kategorien stöbern. Viel Spaß beim Nachkochen!")
+                Text("Hier kann du nach einem bestimmten Rezept suchen oder in den einzelnen Kategorien stöbern. Viel Spaß beim Nachkochen und Bon Appétit!")
                     .font(.system(size: 16, weight: .light, design: .monospaced))
                     .padding(.leading)
+                    .padding(.top, 20)
                 Spacer()
-            }.padding(.top, 20)
-        }.padding()
-        Spacer()
+            }
+        }.padding(.leading, 20)
     }
 }
 

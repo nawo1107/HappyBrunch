@@ -22,21 +22,15 @@ struct GridCellView: View {
                         } else {
                             self.recipesData.addFavorite(id: recipes.id)
                         }
-                        
-                        
                     }, label: {
                         let isFavorite = recipesData.isFavorite(id: recipes.id)
                         Image(systemName: isFavorite ? "heart.fill" : "heart")
-                            .frame(alignment: .leading)
+                            .resizable()
+                            .frame(width: 33, height: 30, alignment: .trailing)
                             .foregroundColor(isFavorite ? .red : Color("darkgrey"))
                             .padding(.bottom, 25)
-                            .padding(.top, 25)
-
+                            .padding(.top, 27)
                     })
-
-
-                    
-
                     Image(recipes.image)
                         .resizable()
                         .frame(width: 300, height: 200)
@@ -45,15 +39,11 @@ struct GridCellView: View {
                         .font(.system(size: 20, weight: .medium, design: .serif))
                         .padding(.top, 10)
                         .padding(.bottom, 5)
+                        .multilineTextAlignment(.center)
                     Label(recipes.time, systemImage: "clock")
                         .font(.system(size: 16, weight: .medium, design: .monospaced))
                         .padding(.bottom, 18)
-
-                        
-                    
-                    Spacer()
-                } .padding([.leading, .trailing], 25)
-                
+                } .padding([.leading, .trailing], 22)
             }
             .background(Color(.secondarySystemBackground))
             .foregroundColor(Color("darkgrey"))

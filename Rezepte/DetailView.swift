@@ -11,27 +11,31 @@ struct DetailView: View {
 
     
     var recipe: Recipe
-
+    
     var body: some View {
-        ZStack(alignment: .topTrailing) {
-            VStack{
-                Image(recipe.image)
-                    .resizable()
-                    .frame(width: 450 , height: 350)
-                    .cornerRadius( 0 , antialiased: (25 != 0))
-                HStack{
+        VStack {
+            ScrollView{
+                VStack{
+                    Image(recipe.image)
+                        .resizable()
+                        .frame(width: 450 , height: 300)
+                    VStack{
                         Text(recipe.title).font(.system(size: 25, weight: .bold, design: .serif))
-                    }.padding()
-                    Text(recipe.subtitle).font(.system(size: 16, weight: .light, design: .monospaced))
-                    Spacer()
-                    Text(recipe.description)
-                        .font(.system(size: 15, weight: .light, design: .serif))
-                        .padding(.all, 18)
+                            .padding()
+                            .multilineTextAlignment(.center)
+                        Text(recipe.subtitle).font(.system(size: 16, weight: .light, design: .monospaced))
+                            .padding(.all, 18)
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                        Text(recipe.description)
+                            .font(.system(size: 16, weight: .light, design: .serif))
+                            .padding(.all, 35)
+                    }.padding(.leading)
+
                 }
+
             }
-            .contentShape(Rectangle())
+
+        }
     }
 }
-
-
-

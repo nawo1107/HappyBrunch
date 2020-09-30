@@ -33,7 +33,7 @@ struct ShoppingList: View {
             VStack {
                 Text("Einkaufsliste")
                     .font(.system(size: 45, weight: .medium, design: .serif))
-                    .padding(.leading)
+                    .padding(.top, 20)
                 Spacer()
                 VStack {
                     listInput.padding(.all, 10)
@@ -70,7 +70,7 @@ struct Task : Identifiable {
     var toBuyItem = String()
 }
 
-class TaskStore : ObservableObject {
+class TaskStore: ObservableObject {
     @Published var tasks = [Task]()
 }
 
