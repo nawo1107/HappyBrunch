@@ -15,34 +15,35 @@ struct FavoritesView: View {
             ScrollView(.vertical, showsIndicators: false){
                 VStack{
                     HStack{
-                        VStack(alignment: .leading, spacing: 12) {
+                        VStack() {
                             Text("Favoriten")
                                 .font(.system(size: 45, weight: .medium, design: .serif))
                                 .padding(.top, 20)
-                                .padding(.leading)
-                            
+                                
                             HStack{
-                                Text("Hier findest du deine Lieblingsrezepte. Viel Spaß beim Kochen!")
+                                Text("Hier findest du deine Lieblings-Rezepte. Erstelle deine eigene Sammlung mit Rezepten. Viel Spaß beim Ausporbieren!")
                                     .font(.system(size: 16, weight: .light, design: .monospaced))
-                                    .padding(.leading)
+                                    .padding()
                                 Spacer()
                             }.padding(.top, 20)
                             VStack{
-                                Text("Deine Lieblinge").font(.system(size: 22, weight: .medium, design: .serif)).padding(.trailing, 80)
-                                    .padding(.leading)
+                                Text("Deine Lieblings-Rezepte").font(.system(size: 25, weight: .medium, design: .serif))
+                                    .padding()
                             }
                             .padding(.top, 30)
-                        }
+                        }.padding(.leading, 20)
                         Spacer()
-                    }.padding()
-                    VStack(spacing: 20){
+                    }
+                    VStack {
                         ForEach(recipesData.getFavorisedRecipes()){recipe in
                             NavigationLink(
                                 destination: DetailView(recipe: recipe),
                                 label: {
                                     GridCellView(recipesData: recipesData, recipes: recipe)
                                 })
+                            Spacer()
                         }
+                        Spacer()
                     }
                 }
             }
@@ -63,3 +64,9 @@ struct FavoritesView: View {
 
 
 
+
+struct FavoritesView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

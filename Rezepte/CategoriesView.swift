@@ -14,9 +14,6 @@ struct CategoriesView: View {
     let categories = ["Amerikanisch", "Deutsch", "Französisch"]
     let recipesData: RecipesData
 
-    
-    let layout = [ GridItem(.adaptive(minimum: 180))]
-    
     var body: some View {
         ZStack {
             NavigationView {
@@ -24,7 +21,7 @@ struct CategoriesView: View {
                     HeaderView()
                     SearchTextFieldView(text: $filterBySearch)
                     CategoriesButtonView(filterByCategory: $filterByCategory, categories: categories)
-                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, layout: layout, recipesData: recipesData)
+                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, recipesData: recipesData)
                 }
             }
             
