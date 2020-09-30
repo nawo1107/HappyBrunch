@@ -16,20 +16,23 @@ struct CategoriesButtonView: View {
         HStack {
             ForEach(categories, id: \.self) {category in
                 Text(category)
-                    .font(.caption)
+                    .font(.system(size: 16, weight: .light, design: .monospaced))
                     .fontWeight(category == filterByCategory ? .bold: .regular)
-                    .padding([.horizontal, .bottom])
                     .foregroundColor(category == filterByCategory ? Color(.label) : .secondary)
                     .fixedSize()
+                    .padding([.horizontal, .bottom, .top, .leading])
                     .onTapGesture {
                         filter(by: category)
                     }
+                
+                Spacer()
             }
-        }
-    Spacer()
+        }.padding(.leading)
+        Spacer()
     }
     
     func filter(by label: String) {
         filterByCategory = label
     }
 }
+
