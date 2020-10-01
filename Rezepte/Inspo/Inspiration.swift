@@ -14,7 +14,7 @@ struct Home: View{
             id: 0,
             image: "FrenchToast",
             title: "Brunch",
-            subtitle: "Was ist das überhaup?",
+            subtitle: "Was ist das überhaupt?",
             details: "Als Brunch wird eine Mahlzeit bezeichnet, die aus Komponenten des Frühstücks und des Mittagessens besteht. Das Kofferwort Brunch stammt aus dem Englischen und setzt sich aus breakfast („Frühstück“) und lunch („Mittagessen“) zusammen.Ein Brunch beginnt häufig am Vormittag und wird oft bis in den frühen Nachmittag ausgedehnt.",
             expand: false
         ),
@@ -66,7 +66,7 @@ struct Home: View{
                                 .resizable()
                                 .frame(width: 65, height: 65, alignment: .center)
                             HStack{
-                                Text("Hey Natalie, herzlich willkommen! Wir haben neue Rezept- Empfehlungen für dich. Lass dich inspieren oder suche nach deinem Lieblingsrezept.")
+                                Text("Herzlich willkommen bei Happy Brunch! Wir haben neue Rezept- Empfehlungen für dich. Lass dich inspieren oder suche nach deinem Lieblingsrezept.")
                                     .font(.system(size: 16, weight: .light, design: .monospaced))
                                     .padding(.leading)
                                 Spacer()
@@ -82,7 +82,7 @@ struct Home: View{
                     VStack(spacing: 20){
                         ForEach(0..<self.data.count){i in
                             GeometryReader{g in
-                                Placeholder(data: self.$data[i], animate: self.$animate)
+                                InspoAnimation(data: self.$data[i], animate: self.$animate)
                                     .offset(y: self.data[i].expand ? -g.frame(in: .global).minY : 0)
                                     .opacity(self.animate ? (self.data[i].expand ? 1 : 0 ) : 1)
                                     // Add Gesture
@@ -105,7 +105,7 @@ struct Home: View{
         }
     }
     
-    struct Placeholder: View{
+    struct InspoAnimation: View{
         
         @Binding var data : Inspiration
         @Binding var animate : Bool

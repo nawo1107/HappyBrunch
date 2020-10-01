@@ -14,7 +14,7 @@ struct ShoppingList: View {
     
     var listInput: some View {
         HStack {
-            TextField("Was willst du einkaufen?", text: self.$newToBuy)
+            TextField("Was brauchst du?", text: self.$newToBuy)
                 .font(.system(size: 16, weight: .light, design: .monospaced))
                 .padding()
             Button(action: self.addNewToBuy, label: {
