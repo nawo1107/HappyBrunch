@@ -21,7 +21,7 @@ struct FavoritesView: View {
                                 .padding(.top, 20)
                             
                             HStack{
-                                Text("Hier findest du deine Lieblings-Rezepte. Erstelle deine eigene Sammlung mit Rezepten. Viel Spaß beim Ausporbieren!")
+                                Text("Hier findest du deine Lieblings-Rezepte. Erstelle deine eigene Sammlung mit Rezepten. Viel Spaß beim Ausprobieren!")
                                     .font(.system(size: 16, weight: .light, design: .monospaced))
                                     .padding()
                                 Spacer()

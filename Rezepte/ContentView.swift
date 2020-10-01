@@ -27,7 +27,6 @@ struct ContentView: View {
                     Image(systemName: "heart")
                     Text("Favoriten")
                 }.tag(2)
-            
             ShoppingList()
                 .tabItem {
                     Image(systemName: "bag")
