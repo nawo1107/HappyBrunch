@@ -13,40 +13,40 @@ struct Home: View{
         Inspiration(
             id: 0,
             image: "FrenchToast",
-            title: "French Toast",
-            subtitle: "Französisch frühstücken",
-            details: "Anleitung: 3 Eier in einem weiten Gefäß, z. B. einer Aufflaufform, mit 200ml Milch und 1 Prise Salz verquirlen. Toastscheiben nach und nach in der Eiermilch einlegen, bis sich das Brot mit der Flüssigkeit vollgesogen hat. Butter in einer Pfanne erhitzen. Die Toastscheiben darin von beiden Seiten ca. 5 Minuten goldbraun braten. Nach Belieben mit Früchten, Nüssen oder Ahornsirup servieren.",
+            title: "Brunch",
+            subtitle: "Was ist das überhaup?",
+            details: "Als Brunch wird eine Mahlzeit bezeichnet, die aus Komponenten des Frühstücks und des Mittagessens besteht. Das Kofferwort Brunch stammt aus dem Englischen und setzt sich aus breakfast („Frühstück“) und lunch („Mittagessen“) zusammen.Ein Brunch beginnt häufig am Vormittag und wird oft bis in den frühen Nachmittag ausgedehnt.",
             expand: false
         ),
         Inspiration(
             id: 1,
             image: "Egg",
-            title: "Strammer Max",
-            subtitle: "Traditionell",
-            details: "Anleitung: Je 1 TL Butter in 2 Pfannen erhitzen. In jede Pfanne nacheinander 4 Eier aufschlagen und vorsichtig in die Pfanne gleiten lassen. Bei mittlerer Hitze zu Spiegeleiern braten. Mit Salz und Pfeffer würzen. Brotscheiben mit je 1 TL Butter bestreichen und mit Schinken belegen. Gurken der Länge nach halbieren und fächerartig einschneiden. Je 2 Eier auf jeder Scheibe Brot anrichten. Mit Gurken garnieren.",
+            title: "Brunch Buffet",
+            subtitle: "Ideen für dein perfektes Brunch",
+            details: "Neben verschiedenen Sorten von Brot und Brötchen sind auch Croissants, Pancakes, Bretzeln, usw. sehr beliebt. Eier in Form von Spiegelei, Rührei mit Speck oder sogar pochiert sind gerade im Trend. Aber auch Müsli mit Joghurt oder Milch, frishes Obst und Warmes wie Aufläufe oder Suppen dürfen bei einem perfekten brunch nicht fehlen.",
             expand: false
         ),
         Inspiration(
             id: 2,
-            image: "Burger",
-            title: "Frühstücksburger",
-            subtitle: "Herzhafter Start in den Tag",
-            details: "Anleitung: Tomaten waschen und in Scheiben schneiden. Schnittlauch waschen und in Ringe schneiden. Eier, Schnittlauch und 6 EL Milch in einer Schüssel verquirlen und mit Salz und Pfeffer würzen. Öl in einer Pfanne erhitzen und  Speckscheiben darin kross braten. Eier-Milch in die Pfanne gießen und stocken lassen. Toastis toasten, mit Butter bestreichen, dann mit Salatblättern, Speck, Rührei und Tomatenscheiben belegen.",
+            image: "Rucola",
+            title: "Rucola Frischkäse",
+            subtitle: "Schneller Brotaufstrich",
+            details: "Anleitung: Einen Becher Frischkäse mit etwas Quark strecken und mit etwas Olivenöl geschmeidig rühren,  mit Salz und Pfeffer würzen. Eine Handvoll Rucola, gewaschen und grob gehackt, unterrühren, sowie einen EL geröstete Pinienkerne, ein paar in feine Streifen geschnittene getrocknete Tomaten oder beides.",
             expand: false
         ),
         Inspiration(
             id: 3,
             image: "PancakesInspo",
             title: "Amerikanische Pancakes",
-            subtitle: "Heaven on Earth",
-            details: "Anleitung: Die 3 Eier und 80g Zucker schaumig schlagen. Dann 275ml Milch dazu geben und verquirlen. 300g Mehl mit 2 TL Backpulver vermengen und mit etwas Salz und Öl unter den Teig rühren. Dabei alle Zutaten verrühren, bis ein homogener Teig entsteht. In einer großen Pfanne Öl erhitzen die Pancakes darin braten.",
+            subtitle: "Kulinarischer Ausflug",
+            details: "Sie sind klein oder groß, dick oder dünn und salzig oder süß. Die runden Teigfladen erobern bereits seit mehreren hundert Jahren Teller und Pfannen auf der ganzen Welt. Besonders im nordamerikanischen Raum sind dicke, fluffige Pancakes quasi Pflicht auf jedem Frühstücks-Tisch – klassischerweise mit Ahornsirup und Butterstückchen serviert",
             expand: false
         ),
         Inspiration(
             id: 4,
             image: "Bread",
-            title: "Bauernbrot backen",
-            subtitle: "Frisches Brot",
+            title: "Bauernbrot",
+            subtitle: "Frisches Brot selbst backen",
             details: "Anleitung: 250 g Weizenmehl, 250 g  Roggenmehl, 30g Zucker und Salz in einer Schüssel mischen. 10g Hefe zugeben. 380 ml lauwarmes Wasser zugeben und alles mit dem Handrührgerät kneten.  60 Min. gehen lassen. Teig durchkneten zu einem runden Laib formen. Auf einem Blech zugedeckt ca. 60 Min. ruhen lassen. Backofen auf 220 Grad vorheizen. Das Brot 40 Min. fertig backen. ",
             expand: false
         )
@@ -72,7 +72,7 @@ struct Home: View{
                                 Spacer()
                             }.padding(.top, 30)
                             VStack{
-                                Text("Rezepte des Tages - Top 5").font(.system(size: 25, weight: .medium, design: .serif))
+                                Text("Inspirationen für dich").font(.system(size: 25, weight: .medium, design: .serif))
                                     .padding(.leading)
                             }
                             .padding(.top, 40)
