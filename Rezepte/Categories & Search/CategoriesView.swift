@@ -10,10 +10,10 @@ import SwiftUI
 struct CategoriesView: View {
     @State private var filterBySearch = ""
     @State private var filterByCategory = "Amerikanisch"
-
+    
     let categories = ["Amerikanisch", "Deutsch", "Französisch"]
     let recipesData: RecipesData
-
+    
     var body: some View {
         ZStack {
             NavigationView {
@@ -21,12 +21,9 @@ struct CategoriesView: View {
                     HeaderView()
                     SearchTextFieldView(text: $filterBySearch)
                     CategoriesButtonView(filterByCategory: $filterByCategory, categories: categories)
-                    GridView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, recipesData: recipesData)
+                    CategoriesFilterView(filterByCategory: $filterByCategory, filterBySearch: $filterBySearch, recipesData: recipesData)
                 }
             }
-            
-            
         }
-        
     }
 }

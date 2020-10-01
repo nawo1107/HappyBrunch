@@ -14,8 +14,7 @@ struct SearchTextFieldView: View {
         ZStack(alignment: .trailing) {
             RoundedRectangle(cornerRadius: 16)
                 .frame(height: 55)
-                .foregroundColor(Color(
-                .secondarySystemBackground))
+                .foregroundColor(Color(.secondarySystemBackground))
                 .padding(.all)
             TextField("Finde Rezepte", text: $text)
                 .padding(.leading)

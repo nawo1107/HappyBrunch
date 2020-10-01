@@ -24,11 +24,3 @@ struct HeaderView: View {
         }.padding(.leading, 20)
     }
 }
-
-
-
-struct HeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        HeaderView()
-    }
-}

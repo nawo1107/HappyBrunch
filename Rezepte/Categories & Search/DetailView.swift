@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DetailView: View {
 
-    
     var recipe: Recipe
     
     var body: some View {
@@ -31,11 +30,8 @@ struct DetailView: View {
                             .font(.system(size: 16, weight: .light, design: .serif))
                             .padding(.all, 35)
                     }.padding(.leading)
-
                 }
-
             }
-
         }
     }
 }

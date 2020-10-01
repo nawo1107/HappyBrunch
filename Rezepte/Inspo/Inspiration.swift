@@ -64,7 +64,7 @@ struct Home: View{
                                 .padding(.leading)
                             Image("LogoSchwarz")
                                 .resizable()
-                                .frame(width: 65, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 65, height: 65, alignment: .center)
                             HStack{
                                 Text("Hey Natalie, herzlich willkommen! Wir haben neue Rezept- Empfehlungen für dich. Lass dich inspieren oder suche nach deinem Lieblingsrezept.")
                                     .font(.system(size: 16, weight: .light, design: .monospaced))
@@ -97,7 +97,6 @@ struct Home: View{
                             }
                             .frame(height: self.data[i].expand ? UIScreen.main.bounds.height : 350)
                             .simultaneousGesture(DragGesture(minimumDistance: self.data[i].expand ? 0 : 500).onChanged({(_) in
-                                print("Youre dragging me")
                             }))
                         }
                     }
@@ -126,19 +125,7 @@ struct Home: View{
                         Text(self.data.details)
                             .font(.system(size: 16, weight: .light, design: .serif))
                             .padding(.all, 25)
-                        //Button
-                        /*Button(action:  {
-                            //Do Something
-                        }) {
-                            Text("Rezept merken")
-                                .font(.system(size: 20, weight: .medium, design: .serif))
-                                .foregroundColor(.white)
-                                .padding(.vertical).frame(width: UIScreen.main.bounds.width / 2)
-                                //Color Background
-                                .background(Color("mattblue"))
-                                .clipShape(Capsule())
-                        }*/
-                        .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 40)
+                            .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 40)
                     }
                 }.padding(.horizontal, self.data.expand ? 0 : 18)
                 .contentShape(Rectangle())
@@ -162,7 +149,7 @@ struct Home: View{
                 }
             }
         }
-
+        
     }
     
     struct Inspiration: Identifiable {
@@ -172,12 +159,5 @@ struct Home: View{
         var subtitle: String
         var details: String
         var expand: Bool
-    }
-
-}
-
-struct Inspiration_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
     }
 }

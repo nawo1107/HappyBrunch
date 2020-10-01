@@ -1,13 +1,13 @@
 //
-//  GridCellView.swift
+//  CategoriesItemView.swift
 //  Rezepte
 //
-//  Created by Natalie Wolf on 26.09.20.
+//  Created by Josina Zotzmann on 01.10.20.
 //
 
 import SwiftUI
 
-struct GridCellView: View {
+struct CategoriesItemView: View {
     
     @ObservedObject var recipesData: RecipesData
     let recipes: Recipe
@@ -52,4 +52,3 @@ struct GridCellView: View {
         }
     }
 }
-

@@ -14,7 +14,8 @@ struct ShoppingList: View {
     
     var listInput: some View {
         HStack {
-            TextField("Was willst du einkaufen?", text: self.$newToBuy)                                    .font(.system(size: 16, weight: .light, design: .monospaced))
+            TextField("Was willst du einkaufen?", text: self.$newToBuy)
+                .font(.system(size: 16, weight: .light, design: .monospaced))
                 .padding()
             Button(action: self.addNewToBuy, label: {
                 Text("Hinzufügen")
@@ -27,7 +28,7 @@ struct ShoppingList: View {
         taskStore.tasks.append(Task(id: String(taskStore.tasks.count + 1), toBuyItem: newToBuy))
         self.newToBuy = ""
     }
-        
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -52,7 +53,7 @@ struct ShoppingList: View {
             }
         }
     }
-        
+    
     
     
     func move(from source : IndexSet, to destination : Int) {
@@ -72,14 +73,6 @@ struct Task : Identifiable {
 
 class TaskStore: ObservableObject {
     @Published var tasks = [Task]()
-}
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ShoppingList()
-    }
 }
 
 

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 import Foundation
 
 class RecipesData: ObservableObject {
@@ -32,7 +31,7 @@ class RecipesData: ObservableObject {
     func removeFavorite(id: String) {
         objectWillChange.send()
         favorites.removeAll(where: { $0 == id })
-
+        
     }
     
     func isFavorite(id: String) -> Bool { 
@@ -48,6 +47,4 @@ class RecipesData: ObservableObject {
     init() {
         recipes = Data.recipes
     }
-    
-
 }

@@ -24,7 +24,7 @@ struct CategoriesButtonView: View {
                     .onTapGesture {
                         filter(by: category)
                     }
-                }
+            }
         }.padding([.leading, .trailing], 14)
     }
     

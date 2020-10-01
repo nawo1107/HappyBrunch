@@ -19,7 +19,7 @@ struct FavoritesView: View {
                             Text("Favoriten")
                                 .font(.system(size: 45, weight: .medium, design: .serif))
                                 .padding(.top, 20)
-                                
+                            
                             HStack{
                                 Text("Hier findest du deine Lieblings-Rezepte. Erstelle deine eigene Sammlung mit Rezepten. Viel Spaß beim Ausporbieren!")
                                     .font(.system(size: 16, weight: .light, design: .monospaced))
@@ -39,7 +39,7 @@ struct FavoritesView: View {
                             NavigationLink(
                                 destination: DetailView(recipe: recipe),
                                 label: {
-                                    GridCellView(recipesData: recipesData, recipes: recipe)
+                                    CategoriesItemView(recipesData: recipesData, recipes: recipe)
                                 })
                             Spacer()
                         }
@@ -48,25 +48,5 @@ struct FavoritesView: View {
                 }
             }
         }
-    }
-        /*NavigationView {
-            List(recipesData.getFavorisedRecipes()) { recipe in
-                    NavigationLink(
-                        destination: DetailView(recipe: recipe),
-                        label: {
-                            GridCellView(recipesData: recipesData, recipes: recipe)
-                        })
-                    }
-                }
-            .navigationBarTitle(Text("Favoriten"))*/
-}
-    
-
-
-
-
-struct FavoritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
